@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light dark"><meta name="description" content="Xcomify private multi-store operations and profit workspace.">
+<title>Xcomify | Central Command</title>
+<link rel="icon" type="image/svg+xml" href="/static/mark.svg"><link rel="stylesheet" href="/static/styles.css">
+<script src="/static/app.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#content">Skip to content</a>
+<div id="app"><div class="boot"><div class="brand-mark">X</div><h1>Xcomify</h1><p>Opening your private workspace...</p></div></div>
+<dialog id="modal" aria-labelledby="modal-title"><div class="modal-head"><div><span class="eyebrow">XCOMIFY WORKSPACE</span><h2 id="modal-title"></h2></div><button type="button" class="icon-button" data-action="close-modal" aria-label="Close dialog">&#215;</button></div><div id="modal-content"></div></dialog>
+<dialog id="reauth-modal" aria-labelledby="reauth-title"><div class="modal-head"><h2 id="reauth-title">Confirm it's you</h2><button type="button" class="icon-button" id="reauth-cancel" aria-label="Cancel verification">&#215;</button></div><form id="reauth-form" class="modal-body"><p class="muted">Sensitive changes require a recent password check. Verification lasts 10 minutes.</p><label>Password<input name="password" type="password" autocomplete="current-password" required maxlength="256"></label><label id="reauth-code-label">Authenticator or recovery code<input name="code" autocomplete="one-time-code" maxlength="80"></label><p id="reauth-error" class="form-error" role="alert"></p><button class="button primary" type="submit">Verify identity</button></form></dialog>
+<div id="toasts" aria-live="polite" aria-atomic="true"></div>
+</body></html>

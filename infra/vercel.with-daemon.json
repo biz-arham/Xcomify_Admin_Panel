@@ -1,0 +1,48 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": "fastapi",
+  "buildCommand": "python scripts/build_vercel.py",
+  "functions": {
+    "index.py": {
+      "maxDuration": 60
+    }
+  },
+  "headers": [
+    {
+      "source": "/api/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "no-store, private"
+        }
+      ]
+    },
+    {
+      "source": "/static/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, must-revalidate"
+        }
+      ]
+    }
+  ],
+  "daemons": {
+    "sheets-sync": {
+      "root": ".",
+      "entrypoint": "Dockerfile.worker",
+      "command": [
+        "python",
+        "-m",
+        "xcomify.cloud_worker"
+      ],
+      "instances": {
+        "iad1": 1
+      }
+    }
+  }
+}

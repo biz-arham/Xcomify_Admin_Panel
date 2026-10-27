@@ -1,0 +1,116 @@
+AUTH FIELDS [{'name': 'email', 'type': 'email'}, {'name': 'password', 'type': 'password'}, {'name': 'code', 'type': 'text'}, {'name': 'password', 'type': 'password'}, {'name': 'code', 'type': 'text'}]
+BODY Skip to content
+X
+xcomify.
+CENTRAL COMMAND
+WORKSPACE
+Overview
+Stores
+Orders
+Profit & reconciliation
+Profit targets
+Tracking monitor
+Team & access
+MANAGEMENT
+Tasks
+Reports
+Sync & conflicts
+Notifications
+1
+Audit trail
+Security
+Settings & connections
+Private workspace
+
+Isolated demo environment
+Local-first edition · v1.0
+
+Workspace / Overview
+Outbound writes stopped
+XD
+Xcomify Demo Owner
+Owner
+DEMO WORKSPACE   Synthetic orders and amounts. No real eBay or Google account connected.
+Google writes disabled
+Xcomify / CENTRAL COMMAND
+Your business, in one view.
+
+Profit, progress and the work that needs your attention.
+
+AUD
+GBP
+USD
+Refresh
+Eligible profit
+£1,886.60
+Confirmed inputs only. Not audited accounts.
+Net order earnings
+£2,474.30
+Already-net earnings, not gross sales
+Orders this month
+47
+2 active stores
+Profit target
+£2,550.00
+74% across compatible targets
+Profit performance
+
+Cumulative confirmed subtotal · October 2026
+
+GBP only
+£1,886.60
+Complete records, excluding provisional profit
+0
+622.6
+1.2K
+1.9K
+01 Oct
+14 Oct
+27 Oct
+Store currencies are never mixed without approved FX.
+2 stores in view
+Monthly target
+74%
+of profit target
+Eligible profit
+£1,886.60
+Monthly goal
+£2,550.00
+Every step counts. Track the remaining daily profit in each store target.
+Store performance
+
+Independent targets. A clear view of every account.
+
+All stores
+UK
+British Home - Demo
+GBP · Local records · DEMO
+Target reached
+£901.20
+of £800.00 monthly profit target
+112.7% achieved
+£0.00 to go
+21 orders · 0 
+ERRORS []
+NAV [{'view': 'overview', 'text': 'Overview'}, {'view': 'stores', 'text': 'Stores'}, {'view': 'orders', 'text': 'Orders'}, {'view': 'finance', 'text': 'Profit & reconciliation'}, {'view': 'targets', 'text': 'Profit targets'}, {'view': 'tracking', 'text': 'Tracking monitor'}, {'view': 'team', 'text': 'Team & access'}, {'view': 'tasks', 'text': 'Tasks'}, {'view': 'reports', 'text': 'Reports'}, {'view': 'sync', 'text': 'Sync & conflicts'}, {'view': 'notifications', 'text': 'Notifications\n1'}, {'view': 'audit', 'text': 'Audit trail'}, {'view': 'security', 'text': 'Security'}, {'view': 'settings', 'text': 'Settings & connections'}, {'view': 'notifications', 'text': ''}]
+VIEW stores loaded
+VIEW orders loaded
+VIEW finance loaded
+VIEW targets loaded
+VIEW tracking loaded
+VIEW tasks loaded
+VIEW team loaded
+VIEW reports loaded
+VIEW sync loaded
+VIEW notifications loaded
+VIEW audit loaded
+VIEW security loaded
+VIEW settings loaded
+MOBILE_OVERFLOW False
+FINAL_ERRORS []
+INTERACTION target edit persisted
+INTERACTION search narrows and clears
+INTERACTION local order + cost correction changes profit
+INTERACTION task create persisted
+INTERACTION dark mode and reduced motion verified
+BROWSER CHECK PASSED

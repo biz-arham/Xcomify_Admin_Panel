@@ -1,0 +1,37 @@
+# REVIEWED DEPLOYMENT TEMPLATE, NOT A CLAIM OF A TESTED CLOUD INSTALLATION.
+# HTTPS reverse proxy and secret injection are required; app binds loopback only here.
+services:
+  database:
+    image: postgres:17
+    environment:
+      POSTGRES_DB: xcomify
+      POSTGRES_USER: xcomify
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Set a private database password}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U xcomify -d xcomify"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+    restart: unless-stopped
+  app:
+    build:
+      context: ..
+    ports:
+      - "127.0.0.1:8080:8080"
+    environment:
+      XCOMIFY_ENV: production
+      XCOMIFY_BASE_URL: ${XCOMIFY_BASE_URL:?Set the external HTTPS origin}
+      DATABASE_URL: ${DATABASE_URL:?Set postgresql+psycopg:// URL using database host}
+      XCOMIFY_ENCRYPTION_KEY: ${XCOMIFY_ENCRYPTION_KEY:?Provide a Fernet key from your secret manager}
+      XCOMIFY_BOOTSTRAP_TOKEN: ${XCOMIFY_BOOTSTRAP_TOKEN:?Provide a strong one-time bootstrap secret}
+      GOOGLE_CLIENT_ID: ${GOOGLE_CLIENT_ID:-}
+      GOOGLE_CLIENT_SECRET: ${GOOGLE_CLIENT_SECRET:-}
+      XCOMIFY_WORKER: "true"
+    depends_on:
+      database:
+        condition: service_healthy
+    restart: unless-stopped
+volumes:
+  postgres_data:
