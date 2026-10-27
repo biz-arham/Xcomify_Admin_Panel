@@ -1,0 +1,69 @@
+XCOMIFY CENTRAL COMMAND - START HERE
+Version 1.0.0 | Local-first runnable application
+
+YEH KYA HAI?
+Yeh sirf dashboard image ya HTML mockup nahi. Ismein working backend, saved database,
+login, store permissions, orders, profit calculations, targets, tasks aur Google
+Sheets adapter ka source code hai. Live Google connection abhi configured nahi.
+
+WINDOWS PAR START
+1. ZIP ko poora Extract All karein. ZIP ke andar se direct run na karein.
+2. Python 3.13 installed hona chahiye. Official installer python.org se lein aur
+   installation mein 'Add Python to PATH' tick karein.
+3. Pehle dekhne ke liye START_DEMO_WINDOWS.bat double-click karein.
+   Asal empty workspace ke liye START_WINDOWS.bat use karein.
+4. Pehli dafa launcher dependencies install karta hai, isliye internet chahiye.
+5. Browser localhost:8787 par khulega. Server window mein ONE-TIME SETUP CODE hoga.
+6. Apna naam, email, 14+ characters ka password aur setup code enter karein.
+   Koi default admin password nahi hai. Setup code/private secrets share na karein.
+7. Server window open rakhein. Browser band karne se worker nahi rukta, lekin PC
+   shutdown ya server process band karne se sync ruk jata hai.
+
+DEMO AUR REAL WORKSPACE
+Demo data synthetic hai; Google connection/writes disabled hain.
+Real workspace empty start hota hai. Demo ko band karke normal launcher kholein.
+Dono ek hi port use karte hain; ek waqt mein ek launcher chalayein.
+Real data .data folder mein; demo .data-demo mein save hota hai.
+In folders ko delete, cloud-public-share ya kisi ko send na karein.
+
+APNE STORES ADD KARNA
+Stores > Add store > naam, marketplace, currency aur timezone set karein.
+Manage mein source financial meanings review karke profit basis approve karein.
+Targets mein har store ka monthly profit target set karein.
+Local orders/CSV ke saath software ko pehle safely test kar sakte hain.
+Missing cost ko zero nahi maana jata; incomplete records review mein rehte hain.
+
+GOOGLE SHEETS CONNECT KARNA
+docs/GOOGLE_SETUP.md follow karein. Apna OAuth client local .env mein configure
+karna aur apni Google identity authorize karna zaroori hai. Google password app
+mein enter nahi karna. Chat mein client secret/keys na bhejein.
+Sheets Restricted/private hi rahengi. Koi public editor link required nahi.
+Har store ki actual columns/header mapping alag inspect karein; columns assume
+nahi hotay. Pehle read-only import aur reconciliation.
+Write-back ke liye MFA, test Sheet verification, safe field ownership aur explicit
+owner approval required hain. Arbitrary shared cells ko blind overwrite nahi karta.
+
+SECURITY / BACKUP
+Security > authenticator MFA enable karein aur recovery codes offline save karein.
+Settings > encrypted backup. .data/backup-recovery.key ko backup se alag secure
+jagah par rakhna zaroori hai. Key ke baghair encrypted backup restore nahi hota.
+Restore sirf nayi empty directory mein hota hai aur writes disabled rehti hain.
+Detailed guide: docs/OPERATIONS.md.
+
+IMPORTANT DELIVERY STATUS
+- Linux/Python 3.13 par API, finance, permissions, sync simulation aur restore tests run hue.
+- Chromium mein desktop/mobile views aur UI interactions verify kiye gaye; network
+  navigation restriction ki wajah se test harness ne real backend ko relay kiya.
+- Windows launcher diya gaya hai, lekin is environment mein Windows par execute nahi hua.
+- Real Google OAuth/Sheet par integration test, actual extension regression, cloud
+  hosting, PostgreSQL deployment aur independent security review abhi required hain.
+- Full multi-item allocation, scheduled email reports, advanced AI, eBay API actions,
+  FX conversion aur formal accounting is build mein implemented nahi hain.
+- Feature-by-feature status docs/FEATURE_STATUS.md mein hai.
+
+24/7 / TEAM ACCESS
+Local HTTP edition sirf isi computer par chalti hai. Office team ko internet/LAN
+par access dene se pehle HTTPS hosted deployment aur security review required hai.
+Local port ko router par forward na karein. infra/README.md dekhein.
+
+RUNNABLE SOFTWARE PACKAGE HAI, AUDITED PRODUCTION CERTIFICATION NAHI.

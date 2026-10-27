@@ -1,0 +1,23 @@
+{
+  "package": "Xcomify Vercel deployment preparation",
+  "prepared_date": "2026-10-27",
+  "source": "Xcomify_Central_Command_v1.0.zip",
+  "deployed": false,
+  "live_url": null,
+  "deployment_blocker": "Vercel connector disabled by workspace administrator",
+  "local_tests": {
+    "passed": 89,
+    "warnings": 1,
+    "original_tests": 63,
+    "hosted_adapter_tests": 26
+  },
+  "python": "3.13.5",
+  "test_platform": "Linux",
+  "real_postgresql_tested": false,
+  "vercel_build_tested": false,
+  "daemon_tested_on_vercel": false,
+  "real_google_integration_tested": false,
+  "default_deployment_profile": "Web only; separate worker required for automatic sync",
+  "optional_worker_profile": "infra/vercel.with-daemon.json (public beta, not deployed)",
+  "credentials_or_resources_created": false
+}

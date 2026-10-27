@@ -1,0 +1,20 @@
+XCOMIFY - VERCEL DEPLOYMENT PACKAGE
+
+Ye package tayyar hai lekin abhi Vercel par upload/deploy NAHI hua.
+Vercel connection current ChatGPT workspace admin ne disable ki hui hai.
+
+Pehle authorized admin Vercel access enable kare. Password/token chat mein mat bhejo.
+Is build ke liye permanent PostgreSQL database aur private production settings chahiye.
+Local SQLite file ko Vercel par upload karke reliable database nahi ban sakta.
+
+README_VERCEL.md mein exact configuration aur deployment procedure hai.
+
+vercel.json = web application only; background sync is profile mein nahi chalegi.
+infra/vercel.with-daemon.json = separate persistent worker ka optional profile.
+Daemon feature beta hai; account support aur production tests verify karne hain.
+
+Production Google writes tabhi enable karni hain jab approved test Sheet par mapping,
+profit calculations, permissions aur write-back verify ho jayein.
+
+Koi live URL create nahi hua. Koi hosting plan ya database purchase nahi hua.
+Original software ZIP aur existing Google Sheets/extensions unchanged hain.

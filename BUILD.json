@@ -1,0 +1,35 @@
+{
+  "application": "Xcomify Central Command",
+  "version": "1.0.0",
+  "edition": "local-first",
+  "build_date": "2026-10-27",
+  "automated_tests_passed": 63,
+  "live_google_verified": false,
+  "cloud_deployed": false,
+  "windows_executed": false,
+  "production_security_certified": false,
+  "notes": "See docs/FEATURE_STATUS.md and docs/TEST_RESULTS.md. No real credentials or business data included.",
+  "vercel_preparation": {
+    "package": "Xcomify Vercel deployment preparation",
+    "prepared_date": "2026-10-27",
+    "source": "Xcomify_Central_Command_v1.0.zip",
+    "deployed": false,
+    "live_url": null,
+    "deployment_blocker": "Vercel connector disabled by workspace administrator",
+    "local_tests": {
+      "passed": 89,
+      "warnings": 1,
+      "original_tests": 63,
+      "hosted_adapter_tests": 26
+    },
+    "python": "3.13.5",
+    "test_platform": "Linux",
+    "real_postgresql_tested": false,
+    "vercel_build_tested": false,
+    "daemon_tested_on_vercel": false,
+    "real_google_integration_tested": false,
+    "default_deployment_profile": "Web only; separate worker required for automatic sync",
+    "optional_worker_profile": "infra/vercel.with-daemon.json (public beta, not deployed)",
+    "credentials_or_resources_created": false
+  }
+}

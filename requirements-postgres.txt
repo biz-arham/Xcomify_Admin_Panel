@@ -1,0 +1,2 @@
+-r requirements.txt
+# The Vercel deployment package pins psycopg[binary] in requirements.txt.

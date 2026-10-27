@@ -1,0 +1,14 @@
+.venv/
+.env
+.data/
+.data-demo/
+__pycache__/
+.pytest_cache/
+*.pyc
+*.db
+*.sqlite*
+secrets/
+backups/
+test-results/
+.vercel/
+public/static/

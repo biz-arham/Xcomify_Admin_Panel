@@ -1,0 +1,13 @@
+Xcomify Central Command is a custom source-code application supplied for this
+workspace's owner to inspect, run and adapt. No business credentials, real buyer
+records, runtime databases, private keys, external font files or third-party
+brand artwork are distributed in this archive. The X wordmark is a text-based
+placeholder, not a claim to reproduce an official uploaded logo.
+
+Python libraries are installed separately from package repositories. Their
+individual licenses and notices continue to apply. Requirements pin the tested
+runtime; they do not certify dependencies against all future security advisories.
+
+Demo and test records are synthetic. This is not an official eBay, AliExpress or
+Google product. No platform approval, audited accounting or security
+certification is implied.

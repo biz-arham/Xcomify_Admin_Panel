@@ -1,0 +1,17 @@
+.git
+.env
+.env.*
+.venv
+venv
+.data
+.data-*
+**/__pycache__
+**/*.pyc
+**/*.db
+**/*.sqlite
+**/*.sqlite3
+**/*.backup
+**/*.enc
+.pytest_cache
+verification
+node_modules
